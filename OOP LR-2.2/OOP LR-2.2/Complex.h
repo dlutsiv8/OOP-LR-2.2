@@ -4,7 +4,7 @@
 
 using namespace std;
 
-// Клас Complex — комплексне число a + bi
+// Клас комплексного числа
 class Complex
 {
 private:
@@ -12,60 +12,54 @@ private:
     double im; // уявна частина
 
 public:
-
-    // КОНСТРУКТОРИ
-
-    // без параметрів
+    // Конструктор без параметрів
     Complex();
 
-    // ініціалізації
+    // Конструктор ініціалізації
     Complex(double r, double i);
 
-    // копіювання
+    // Конструктор копіювання
     Complex(const Complex& other);
 
-    // МЕТОДИ ДОСТУПУ 
-
+    // Методи доступу (читання)
     double getRe() const;
     double getIm() const;
 
-    // МЕТОДИ ЗАПИСУ 
-
+    // Методи запису
     void setRe(double value);
     void setIm(double value);
 
-    // ОПЕРАТОР ПРИСВОЄННЯ 
-
+    // Оператор присвоєння
     Complex& operator=(const Complex& other);
 
-    // УНАРНІ ОПЕРАТОРИ 
+    // Префіксний інкремент
+    Complex& operator++();
 
-    Complex& operator++();      // префіксний ++
-    Complex operator++(int);    // постфіксний ++
+    // Постфіксний інкремент
+    Complex operator++(int);
 
-    Complex& operator--();      // префіксний --
-    Complex operator--(int);    // постфіксний --
+    // Префіксний декремент
+    Complex& operator--();
 
-    // ОПЕРАТОРИ З ПРИСВОЄННЯМ 
+    // Постфіксний декремент
+    Complex operator--(int);
 
+    // Оператори з присвоєнням
     Complex& operator+=(const Complex& other);
     Complex& operator-=(const Complex& other);
     Complex& operator*=(const Complex& other);
     Complex& operator/=(const Complex& other);
 
-    //  ПЕРЕТВОРЕННЯ В STRING 
-
+    // Перетворення об'єкта у рядок
     operator string() const;
 
-    // ДРУЖНІ БІНАРНІ ОПЕРАТОРИ 
-
+    // Бінарні оператори (дружні функції)
     friend Complex operator+(const Complex& a, const Complex& b);
     friend Complex operator-(const Complex& a, const Complex& b);
     friend Complex operator*(const Complex& a, const Complex& b);
     friend Complex operator/(const Complex& a, const Complex& b);
 
-    // ОПЕРАТОРИ ВВОДУ / ВИВОДУ 
-
+    // Потокове введення / виведення
     friend ostream& operator<<(ostream& out, const Complex& c);
     friend istream& operator>>(istream& in, Complex& c);
 };

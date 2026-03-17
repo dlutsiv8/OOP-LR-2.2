@@ -3,20 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\Admin\\OneDrive\\\u0420\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\\u041E\u041E\u041F Visual Studio\\OOP LR-2.2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8CF807D9-F2C6-4FFE-9676-4559680C82AC}|OOP LR-2.2\\OOP LR-2.2.vcxproj|C:\\Users\\Admin\\OneDrive\\\u0420\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\\u041E\u041E\u041F Visual Studio\\OOP LR-2.2\\OOP LR-2.2\\OOP LR-2.2.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{8CF807D9-F2C6-4FFE-9676-4559680C82AC}|OOP LR-2.2\\OOP LR-2.2.vcxproj|solutionrelative:OOP LR-2.2\\OOP LR-2.2.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{506DBA7F-0F59-E92A-1963-4829F9CE38EE}|UnitTest2.2\\UnitTest2.2.vcxproj|C:\\Users\\Admin\\OneDrive\\\u0420\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\\u041E\u041E\u041F Visual Studio\\OOP LR-2.2\\OOP LR-2.2\\Complex.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{506DBA7F-0F59-E92A-1963-4829F9CE38EE}|UnitTest2.2\\UnitTest2.2.vcxproj|solutionrelative:OOP LR-2.2\\Complex.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{506DBA7F-0F59-E92A-1963-4829F9CE38EE}|UnitTest2.2\\UnitTest2.2.vcxproj|C:\\Users\\Admin\\OneDrive\\\u0420\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\\u041E\u041E\u041F Visual Studio\\OOP LR-2.2\\OOP LR-2.2\\Complex.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{506DBA7F-0F59-E92A-1963-4829F9CE38EE}|UnitTest2.2\\UnitTest2.2.vcxproj|solutionrelative:OOP LR-2.2\\Complex.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{506DBA7F-0F59-E92A-1963-4829F9CE38EE}|UnitTest2.2\\UnitTest2.2.vcxproj|C:\\Users\\Admin\\OneDrive\\\u0420\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\\u041E\u041E\u041F Visual Studio\\OOP LR-2.2\\OOP LR-2.2\\Complex.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{506DBA7F-0F59-E92A-1963-4829F9CE38EE}|UnitTest2.2\\UnitTest2.2.vcxproj|solutionrelative:OOP LR-2.2\\Complex.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{506DBA7F-0F59-E92A-1963-4829F9CE38EE}|UnitTest2.2\\UnitTest2.2.vcxproj|C:\\Users\\Admin\\OneDrive\\\u0420\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\\u041E\u041E\u041F Visual Studio\\OOP LR-2.2\\UnitTest2.2\\UnitTest2.2.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{506DBA7F-0F59-E92A-1963-4829F9CE38EE}|UnitTest2.2\\UnitTest2.2.vcxproj|solutionrelative:UnitTest2.2\\UnitTest2.2.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8CF807D9-F2C6-4FFE-9676-4559680C82AC}|OOP LR-2.2\\OOP LR-2.2.vcxproj|C:\\Users\\Admin\\OneDrive\\\u0420\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\\u041E\u041E\u041F Visual Studio\\OOP LR-2.2\\OOP LR-2.2\\OOP LR-2.2.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{8CF807D9-F2C6-4FFE-9676-4559680C82AC}|OOP LR-2.2\\OOP LR-2.2.vcxproj|solutionrelative:OOP LR-2.2\\OOP LR-2.2.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
@@ -36,27 +36,26 @@
               "RelativeDocumentMoniker": "OOP LR-2.2\\Complex.h",
               "ToolTip": "C:\\Users\\Admin\\OneDrive\\\u0420\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\\u041E\u041E\u041F Visual Studio\\OOP LR-2.2\\OOP LR-2.2\\Complex.h",
               "RelativeToolTip": "OOP LR-2.2\\Complex.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAACcAAAAAAAAAAAAAAEAAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-03-08T14:09:43.401Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-08T14:09:43.401Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "Complex.cpp",
               "DocumentMoniker": "C:\\Users\\Admin\\OneDrive\\\u0420\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\\u041E\u041E\u041F Visual Studio\\OOP LR-2.2\\OOP LR-2.2\\Complex.cpp",
               "RelativeDocumentMoniker": "OOP LR-2.2\\Complex.cpp",
               "ToolTip": "C:\\Users\\Admin\\OneDrive\\\u0420\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\\u041E\u041E\u041F Visual Studio\\OOP LR-2.2\\OOP LR-2.2\\Complex.cpp",
               "RelativeToolTip": "OOP LR-2.2\\Complex.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAN0AAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2026-03-08T14:09:40.849Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "UnitTest2.2.cpp",
               "DocumentMoniker": "C:\\Users\\Admin\\OneDrive\\\u0420\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\\u041E\u041E\u041F Visual Studio\\OOP LR-2.2\\UnitTest2.2\\UnitTest2.2.cpp",
               "RelativeDocumentMoniker": "UnitTest2.2\\UnitTest2.2.cpp",
@@ -64,21 +63,19 @@
               "RelativeToolTip": "UnitTest2.2\\UnitTest2.2.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2026-03-08T14:08:29.742Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-08T14:08:29.742Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "OOP LR-2.2.cpp",
               "DocumentMoniker": "C:\\Users\\Admin\\OneDrive\\\u0420\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\\u041E\u041E\u041F Visual Studio\\OOP LR-2.2\\OOP LR-2.2\\OOP LR-2.2.cpp",
               "RelativeDocumentMoniker": "OOP LR-2.2\\OOP LR-2.2.cpp",
               "ToolTip": "C:\\Users\\Admin\\OneDrive\\\u0420\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\\u041E\u041E\u041F Visual Studio\\OOP LR-2.2\\OOP LR-2.2\\OOP LR-2.2.cpp",
               "RelativeToolTip": "OOP LR-2.2\\OOP LR-2.2.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAD8AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2026-03-08T14:00:14.53Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-08T14:00:14.53Z"
             }
           ]
         }

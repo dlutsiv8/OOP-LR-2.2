@@ -5,70 +5,56 @@ using namespace std;
 
 int main()
 {
-    // створення об'єктів
+    // Різні способи створення об'єктів
 
-    Complex a;
-    Complex b(3, 4);
-    Complex c = b;
-
-    // масив об'єктів
-
-    Complex arr[3];
-
-    // ввід
-
-    cin >> a;
-
-    // вивід
+    Complex a;           // конструктор без параметрів
+    Complex b(3, 4);     // конструктор ініціалізації
+    Complex c = b;       // конструктор копіювання
 
     cout << "a = " << a << endl;
     cout << "b = " << b << endl;
+    cout << "c = " << c << endl;
 
-    // оператори
+    // Введення значення
 
-    cout << "a + b = " << a + b << endl;
-    cout << "a - b = " << a - b << endl;
-    cout << "a * b = " << a * b << endl;
-    cout << "a / b = " << a / b << endl;
+    cin >> a;
 
-    // оператори присвоєння
+    cout << "a = " << a << endl;
 
-    a += b;
-    cout << "a += b -> " << a << endl;
+    // Використання бінарних операторів
 
-    a -= b;
-    cout << "a -= b -> " << a << endl;
+    Complex d = a + b;
+    cout << "a + b = " << d << endl;
 
-    a *= b;
-    cout << "a *= b -> " << a << endl;
+    d = a - b;
+    cout << "a - b = " << d << endl;
 
-    a /= b;
-    cout << "a /= b -> " << a << endl;
+    d = a * b;
+    cout << "a * b = " << d << endl;
 
-    // інкремент
+    d = a / b;
+    cout << "a / b = " << d << endl;
 
-    ++a;
-    cout << "++a = " << a << endl;
+    // Інкремент та декремент
 
     a++;
-    cout << "a++ = " << a << endl;
-
-    // декремент
-
-    --a;
-    cout << "--a = " << a << endl;
+    ++a;
 
     a--;
-    cout << "a-- = " << a << endl;
+    --a;
 
-    // перетворення у string
+    // Перетворення у рядок
 
-    string s = (string)a;
+    string s = string(a);
     cout << "String: " << s << endl;
 
-    // розмір класу
+    // Масив об'єктів
 
-    cout << "Size of Complex: " << sizeof(Complex) << endl;
+    Complex arr[3];
+
+    // Розмір класу
+
+    cout << "Size of class: " << sizeof(Complex) << endl;
 
 #pragma pack(push,1)
     cout << "Size with pack(1): " << sizeof(Complex) << endl;

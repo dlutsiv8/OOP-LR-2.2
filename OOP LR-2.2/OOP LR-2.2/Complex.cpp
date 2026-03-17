@@ -1,28 +1,28 @@
 ﻿#include "Complex.h"
 #include <sstream>
-#include <cmath>
 
-// КОНСТРУКТОРИ
-
+// Конструктор без параметрів
 Complex::Complex()
 {
     re = 0;
     im = 0;
 }
 
+// Конструктор ініціалізації
 Complex::Complex(double r, double i)
 {
     re = r;
     im = i;
 }
 
+// Конструктор копіювання
 Complex::Complex(const Complex& other)
 {
     re = other.re;
     im = other.im;
 }
 
-// GET 
+// Методи доступу (читання)
 
 double Complex::getRe() const
 {
@@ -34,7 +34,7 @@ double Complex::getIm() const
     return im;
 }
 
-// SET 
+// Методи запису
 
 void Complex::setRe(double value)
 {
@@ -46,10 +46,11 @@ void Complex::setIm(double value)
     im = value;
 }
 
-// ОПЕРАТОР ПРИСВОЄННЯ 
+// Оператор присвоєння
 
 Complex& Complex::operator=(const Complex& other)
 {
+    // перевірка самоприсвоєння
     if (this != &other)
     {
         re = other.re;
@@ -59,55 +60,61 @@ Complex& Complex::operator=(const Complex& other)
     return *this;
 }
 
-// ІНКРЕМЕНТ 
+// Префіксний інкремент (++a)
 
 Complex& Complex::operator++()
 {
-    re++;
-    im++;
+    ++re; // збільшуємо дійсну частину
     return *this;
 }
+
+// Постфіксний інкремент (a++)
 
 Complex Complex::operator++(int)
 {
-    Complex temp(*this);
-    re++;
-    im++;
+    Complex temp(*this); // зберігаємо старе значення
+    im++;                // збільшуємо уявну частину
     return temp;
 }
 
-// ДЕКРЕМЕНТ 
+// Префіксний декремент (--a)
 
 Complex& Complex::operator--()
 {
-    re--;
-    im--;
+    --re;
     return *this;
 }
+
+// Постфіксний декремент (a--)
 
 Complex Complex::operator--(int)
 {
     Complex temp(*this);
-    re--;
     im--;
     return temp;
 }
 
-// ОПЕРАТОРИ += -= *= /= 
+// Оператор +=
 
 Complex& Complex::operator+=(const Complex& other)
 {
     re += other.re;
     im += other.im;
+
     return *this;
 }
+
+// Оператор -=
 
 Complex& Complex::operator-=(const Complex& other)
 {
     re -= other.re;
     im -= other.im;
+
     return *this;
 }
+
+// Оператор *= (множення комплексних чисел)
 
 Complex& Complex::operator*=(const Complex& other)
 {
@@ -120,9 +127,18 @@ Complex& Complex::operator*=(const Complex& other)
     return *this;
 }
 
+// Оператор /= (ділення комплексних чисел)
+
 Complex& Complex::operator/=(const Complex& other)
 {
     double denominator = other.re * other.re + other.im * other.im;
+
+    // перевірка ділення на 0
+    if (denominator == 0)
+    {
+        cout << "Error: division by zero!" << endl;
+        exit(1);
+    }
 
     double r = (re * other.re + im * other.im) / denominator;
     double i = (im * other.re - re * other.im) / denominator;
@@ -133,16 +149,18 @@ Complex& Complex::operator/=(const Complex& other)
     return *this;
 }
 
-// STRING 
+// Перетворення об'єкта у рядок
 
 Complex::operator string() const
 {
     stringstream ss;
+
     ss << re << " + " << im << "i";
+
     return ss.str();
 }
 
-// БІНАРНІ ОПЕРАТОРИ 
+// Бінарні оператори
 
 Complex operator+(const Complex& a, const Complex& b)
 {
@@ -156,39 +174,54 @@ Complex operator-(const Complex& a, const Complex& b)
 
 Complex operator*(const Complex& a, const Complex& b)
 {
-    return Complex(
-        a.re * b.re - a.im * b.im,
-        a.re * b.im + a.im * b.re
-    );
+    double r = a.re * b.re - a.im * b.im;
+    double i = a.re * b.im + a.im * b.re;
+
+    return Complex(r, i);
 }
 
 Complex operator/(const Complex& a, const Complex& b)
 {
     double denominator = b.re * b.re + b.im * b.im;
 
-    return Complex(
-        (a.re * b.re + a.im * b.im) / denominator,
-        (a.im * b.re - a.re * b.im) / denominator
-    );
+    // перевірка ділення на 0
+    if (denominator == 0)
+    {
+        cout << "Error: division by zero!" << endl;
+        exit(1);
+    }
+
+    double r = (a.re * b.re + a.im * b.im) / denominator;
+    double i = (a.im * b.re - a.re * b.im) / denominator;
+
+    return Complex(r, i);
 }
 
-//  ВИВІД
+// Оператор виведення
 
 ostream& operator<<(ostream& out, const Complex& c)
 {
-    out << c.re << " + " << c.im << "i";
+    out << string(c);
+
     return out;
 }
 
-// ВВІД 
+// Оператор введення
 
 istream& operator>>(istream& in, Complex& c)
 {
+    double r;
+    double i;
+
     cout << "Enter real part: ";
-    in >> c.re;
+    in >> r;
 
     cout << "Enter imaginary part: ";
-    in >> c.im;
+    in >> i;
+
+    // запис через set-методи
+    c.setRe(r);
+    c.setIm(i);
 
     return in;
 }
